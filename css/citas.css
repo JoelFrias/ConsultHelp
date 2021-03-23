@@ -1,0 +1,320 @@
+#form1{
+    box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    -webkit-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    -moz-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    height: 607px;
+    width: 600px;
+    background-color: #cadeeb46;
+    border-radius: 50px;
+    transition: .3s;
+ }
+
+#form1:hover{
+    box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+    -webkit-box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+    -moz-box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+}
+#form2{
+    box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    -webkit-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    -moz-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    height: 820px;
+    width: 600px;
+    background-color: #cadeeb46;
+    border-radius: 50px;
+    transition: .3s;
+ }
+
+#form2:hover{
+    box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+    -webkit-box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+    -moz-box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+}
+#frente{
+    position: relative;
+    top: 10px;
+}
+ h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+ }
+
+#nombre-pagar{
+    position: relative;
+    left: -137px;
+}
+#telefono-pagar{
+    position: relative;
+    top: -62px;
+    left: 140px;
+}
+#proxima-cita{
+    position: relative;
+    top: -50px;
+    left: -137px;
+}
+#fecha-cita{
+    position: relative;
+    top: -112px;
+    left: 140px;
+}
+
+#nom{
+    position: relative;
+    left: 200px;
+    margin-right: 0px !important;
+
+ }
+
+ #emai{
+    position: relative;
+    left: 340px;
+    z-index: 1;
+ }
+ 
+ #tel{
+    position: relative;
+    top: -72px;
+    left: 60px;
+ }
+ #dote{ 
+    position: relative;
+    top: -227px;
+    left: 60px;
+ }
+ #hura{
+    position: relative;
+    left: 340px;
+    top: -150px;
+    z-index: 1;
+ }
+ #asegu{
+     position: relative;
+     top: -88px;
+     left: 339px;
+     z-index: 1;
+ }
+ #detalles{
+     position: relative;
+     left: 60px;
+     top: -137px;
+ }
+ #lolo{
+     position: relative;
+     top: -100px;
+     left: 60px;
+ }
+ #pagado{
+    position: relative;
+    top: -110px;
+    left: 60px;
+ }
+ #devuelta{
+    position: relative;
+    top: -166px;
+    left: 339px; 
+ }
+ #total{
+     position: relative;
+     top: -149px;
+     left: 339px; 
+ }
+ #rad{
+     position: relative;
+ }
+#form1 #botones1{
+    position: relative;
+    top: -40px;
+}
+ #form2 #botones{
+     position: relative;
+     top: -140px;
+ }
+ #estudios{
+     position: relative;
+     top: -100px;
+ }
+ #seguro{
+    position: relative;
+    top: -100px;
+ }
+ #cc{
+     position: relative;
+     top: 0px
+ }
+
+label{
+    font-size: 15px;
+}
+input[type="radio"]{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+input[type="text"]{
+    margin-left: 0px;
+}
+select {
+    margin-right: 0px !important;
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid rgb(55, 122, 223);
+    outline: none;
+}
+input[type="text"], input[type="number"], input[type="date"], input[type="time"], input[type="tel"], input[type="email"]{
+    margin-right: 0px;
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid rgb(55, 122, 223);
+    outline: none;
+}
+ input[type="checkbox"]{
+     display: inline-block;
+     position: relative;
+     top: 5px;
+     margin-left: 5px;
+     width: 20px;
+     height: 20px;
+     -webkit-appearance: none;
+     outline: none;
+     transition: .5s;
+ }
+ 
+ input[type="checkbox"]:before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border: 2px solid #262626;
+     box-sizing: border-box;
+     transition: .5s;
+ }
+ 
+ 
+ input:checked[type="checkbox"]:before{
+     border-left: none;
+     border-top: none;
+     width: 10px;
+     border-color: rgb(76, 194, 202);
+     transform: rotate(45deg);
+ }
+ 
+ button, input[type="reset"], input[type="submit"]{
+     border: 2px solid rgb(4, 40, 94);
+     border-radius: 10px;
+     font-family: 'Montserrat', sans-serif;
+     height: 25px;
+     z-index: auto;
+     cursor: pointer;
+     margin: 5px;
+ }
+ 
+ #boton{
+    position: relative;
+    left: 80px;
+    background: none;
+ }
+
+ /* agregar nuevo paciente */
+
+#añadir-paciente form{
+    box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    -webkit-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    -moz-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+ 
+    width: 600px;
+    height: 530px;
+    background-color: #cadeeb46;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+#añadir-paciente form:hover{
+    box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+    -webkit-box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+    -moz-box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
+}
+#div-nombre-paciente{
+    position: relative;
+    left: 60px;
+    top: 10px;
+}
+#div-telefono-paciente{
+    position: relative;
+    left: 340px;
+    top: -52px;
+}
+#div-email-paciente{
+    position: relative;
+    left: 60px;
+    top: -35px;
+}
+#div-padecimientos-paciente{
+    position: relative;
+    left: 340px;
+    top: -97px;
+}
+#div-detalles-paciente{
+    position: relative;
+    left: 60px;
+    top: -65px;
+}
+textarea{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin-right: 0px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 77px;
+    max-height: 77px;
+    border-radius: 8px;
+    border: 2px solid rgb(55, 122, 223);
+    outline: none;
+}
+#div-aseguradora-paciente{
+    position: relative;
+    left: 340px;
+    top: -116px;
+}
+#botones1{
+    position: relative;
+    top: -90px;
+}
+
+/* estilos de la tabla */
+
+table{
+    z-index: 10;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 10px;
+}
+th, td{
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 10px small;
+}
+thead{
+    border-bottom: solid 5px rgb(76, 194, 202);
+    background-color: rgb(110, 109, 109);
+    color: white;
+}
+tr:nth-child(even){
+    background-color: rgb(233, 230, 230);
+}
+tr:hover td{
+    background-color: rgb(191, 237, 255);
+    color: black;
+}

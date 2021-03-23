@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+#footer{
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    height: 365px;
+}
+#logo{
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+}
+#footer h1{
+    position: relative;
+    top: -20px;
+    color: rgb(64, 147, 224);
+}
+#nosotros p, #creditos p, #contactos p{
+    color: aliceblue;
+    font-size: 18px;
+}
+#nosotros b, #contactos h1{
+    font-size: 25px;
+    color: rgb(64, 147, 224);
+}
+#nosotros{
+    position: relative;
+    display: table-column;
+    width: 300px;
+    left: 8%;
+    float: left;
+}
+#creditos p{
+    color: rgb(64, 147, 224);
+    height: auto;
+    font-size: 20px;
+}
+#creditos ul li{
+    position: relative;
+    left: 20px;
+}
+#creditos ul li a, #creditos ul li{
+    color: aliceblue;
+    font-size: 18px;
+}
+#creditos{
+    position: relative;
+    width: 300px;
+    top: -180px;
+    left: 40%;
+}
+#contactos{
+    position: relative;
+    left: 74%;
+    top: -300px;
+    width: 300px;
+}
+#contactos p a{
+    color: aliceblue;
+}
+#contactos h1{
+    position: relative;
+    top: 5px;
+    right: 90px;
+}
+#copyright{
+    position: relative;
+    top: -180px;
+    background-color: rgb(68, 67, 67);
+}
+#copyright p{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#boton{
+    width: 30px;
+    z-index: 1000;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    left: -30px;
+    
+}
+body{
+    background: url(../img/register.svg);
+    background-repeat: no-repeat;
+    background-size: 135vh;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+div{
+    position: absolute;
+    top: 26%;
+    left: 38%;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+#password{
+    position: relative;
+    left: 17px;
+    width: 270px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 7px;
+    padding: 5px;
+    border: 2px solid rgb(57, 208, 235);
+    box-shadow:3px 3px 5px 1px #a7a5a5;
+    -moz-box-shadow:3px 3px 5px 1px #a7a5a5;
+    -webkit-box-shadow:3px 3px 5px 1px #a7a5a5;
+}
+input[type="text"], input[type="email"]{
+    width: 270px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 7px;
+    padding: 5px;
+    border: 2px solid rgb(57, 208, 235);
+    box-shadow:3px 3px 5px 1px #a7a5a5;
+    -moz-box-shadow:3px 3px 5px 1px #a7a5a5;
+    -webkit-box-shadow:3px 3px 5px 1px #a7a5a5;
+}
+input[type="submit"]{
+    background: rgb(180, 241, 252);
+    margin-top: 20px;
+    height: 30px;
+    width: 270px;
+    border-radius: 10px;
+    border-color: #56bbbb;
+}
+p{
+    position: relative;
+    top: 50px;
+    font-size: 18px;
+}
+a{
+    color: black;
+    
+}

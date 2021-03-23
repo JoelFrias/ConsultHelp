@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#aaa{
+    position: relative;
+    left: 350px;
+}
+
+#fff{
+    background-color: white;
+    border-radius: 10px;
+    position: relative; 
+    left: 180px;
+    border: 2px solid rgb(4, 40, 94);
+    font-family: 'Montserrat', sans-serif;
+    height: 25px;
+    width: 70px;
+    z-index: auto;
+    cursor: pointer;
+}
+
+#p{
+    color: aliceblue;
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+}
+#header a button #boton{
+    background: none;
+}
+#asd{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    width: 650px;
+}
+#asd{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    width: 650px;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+        color: #333;
+        font-size: 1.4rem;
+        margin-top: 5px;
+        line-height: 2.5rem;
+        font-weight: 300px;
+        letter-spacing: .05rem;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.section-title span{
+    color: rgb(64, 147, 224);
+}
+div h2 span{
+    color: rgb(64, 147, 224);
+    font-size: 45px;
+}
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(64, 147, 224);
+    background-color: transparent;
+    border: 2px solid rgb(64, 147, 224);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 36px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+.cta:hover{
+    color: white;
+    background-color: rgb(64, 147, 224);
+}
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.brand h1 span{
+    color: rgb(64, 147, 224);
+}
+
+#header{
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+#header .header{
+    min-height: 8vh;
+    background-color: rgba(0, 0, 0, 0.24);
+    transition: .3s ease background-color;
+}
+#header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+#hero{
+    background-image: url(../img/negro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-attachment: fixed;
+
+}
+
+
+#hero::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4em;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .4s ease forwards;
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(1){
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 2.5s;
+}
+#hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3.5s;
+}
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(64, 147, 224);
+    animation: text_reveal_box 1s ease;
+    animation-delay: .3s;
+}
+#hero h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 3s;
+}
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: rgb(64, 147, 224);
+    }
+}
