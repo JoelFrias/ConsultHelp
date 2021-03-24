@@ -33,8 +33,7 @@
                     <h1>La mejor<span></span></h1>
                     <h1>Plataforma de <span></span></h1>
                     <h1>Consultas Online<span></span></h1>
-                    <a href="login.php" type="button" class="cta">Iniciar Sesión</a>
-                    <a href="invitado.php" type="button" class="cta">Entrar como paciente</a>
+                    <a href="loginpacientes.php" type="button" class="cta">Iniciar Sesión</a>
                     <div id="p">
                     <p><h2 id="p">"Tu necesidad es nuestra prioridad"</h2></p>
                     </div>

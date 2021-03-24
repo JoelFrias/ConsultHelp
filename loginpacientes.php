@@ -22,9 +22,9 @@ require 'php/conexion.php';
 
         <div class="panels-container">
             <div class="signin-signup">
-                <form action="php/loguear.php" method="POST" class="sign-in-form">
+                <form action="php/loguearpacientes.php" method="POST" class="sign-in-form">
                     <h2 class="title">Iniciar Sesión</h2>
-                    <a href="loginpacientes.php" style="color: rgb(39, 85, 128); text-decoration:none; font-size: 17px;">iniciar sesion como paciente</a>
+                    <a href="login.php" style="color: rgb(39, 85, 128); text-decoration:none; font-size: 17px;">iniciar sesion como administrador</a>
                      <div class="input-field">
                          <i class="fas fa-user"></i>
                          <input autocomplete="off" type="email" placeholder="Email" name="usuario" id="email">
@@ -44,7 +44,7 @@ require 'php/conexion.php';
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                     <a href="index.php"><button class="btn transparent" id="sign-up-btn">Volver al Inicio</button></a>
+                     <a href="index.php"><button class="btn transparent" id="sign-up-btn">Cerrar Sesion</button></a>
                 </div>
 
                 <img src="img/log.svg" class="image" alt="Doctor - Medicina - Medico">

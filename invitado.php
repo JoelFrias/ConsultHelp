@@ -14,13 +14,13 @@
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <a href="index.php"><h1><span>C</span>onsult <span>H</span>elp</h1></a>
+                    <a href="invitado.php"><h1><span>C</span>onsult <span>H</span>elp</h1></a>
                 </div>
                 <div class="brand" style="color:white;font-size:17px;position:relative;left:200px;">
-                    Sesión iniciada como invitado.
+                    Sesión iniciada como paciente.
                 </div>
                 <div class="brand">
-                    <a href="php/salir.php"><button style="width:110px;">Volver al inicio</button></a>
+                    <a href="php/salir.php"><button style="width:110px;">Cerrar Sesion</button></a>
                 </div>
             </div>
         </div>
