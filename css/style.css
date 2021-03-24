@@ -19,7 +19,7 @@
     border: 2px solid rgb(4, 40, 94);
     font-family: 'Montserrat', sans-serif;
     height: 25px;
-    width: 70px;
+    width: 90px;
     z-index: auto;
     cursor: pointer;
 }
@@ -35,7 +35,7 @@
 }
 #asd{
     position: relative;
-    left: 50px;
+    left: 80px;
     top: 20px;
     width: 650px;
 }

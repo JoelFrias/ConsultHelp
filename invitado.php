@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/logo/icono.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/citas.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Invitado - Consult Help</title>
 </head>
 <body>
@@ -33,20 +34,23 @@
                 <h1>Plataforma de <span></span></h1>
                 <h1>Consultas Online<span></span></h1>
                 <a href="#citas" type="button" class="cta">Agendar Cita</a>
+                <a href="credit.php" type="button" class="cta">Doctores en servicio</a>
                 <div id="p">
                     <p><h2 id="p" >"Tu necesidad es nuestra prioridad"</h2></p>
                 </div>
             </div>
-            <img id="asd" name="asd"src="img/register.svg" alt="Imagen de doctor" style="position:relative; left:130px">
+            <img id="asd" name="asd"src="img/register.svg" alt="Imagen de doctor">
         </div>
     </section>
     
     <a name="citas"></a>
 
+    <br><br><br><br>
+
     <div class="container">
             <div class="row">
                 <div id="crea-cita">
-                    <form action="php/guardar-citas.php" method="POST" name="" id="form1"><br>
+                    <form action="php/recaptcha.php" method="POST" name="" id="form1"><br>
 
                         <div id="frente" align="center">
                             <img  style="width: 60px; height: 60px;" src="img/icono.png" alt="Icono Consult Help">
@@ -117,6 +121,7 @@
                             <input autocomplete="off"  type="text" name="Detalles" value="" id="Detalles"/><br>
                         </div>
                         <div id="botones1" align="center">
+                            <div class="g-recaptcha" data-sitekey="6LdZ4owaAAAAALH5lTfyJVlleeLLSTA9k7wAtHQd"></div><br>
                             <input type="reset" value="Borrar" style="width: 70px;">
                             <button type="submit" onclick="" style="width: 70px;">Guardar</button>
                         </div>
@@ -133,6 +138,9 @@
                 </div>
             </div>
         </div>
+    <br><br><br><br>
+
+    <?php require 'footer.html' ?>
 
 </body>
 </html>

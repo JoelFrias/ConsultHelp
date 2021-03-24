@@ -24,7 +24,6 @@ require 'php/conexion.php';
             <div class="signin-signup">
                 <form action="php/loguear.php" method="POST" class="sign-in-form">
                     <h2 class="title">Iniciar Sesión</h2>
-                    <a href="loginpacientes.php" style="color: rgb(39, 85, 128); text-decoration:none; font-size: 17px;">iniciar sesion como paciente</a>
                      <div class="input-field">
                          <i class="fas fa-user"></i>
                          <input autocomplete="off" type="email" placeholder="Email" name="usuario" id="email">

@@ -2,11 +2,12 @@
     box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
     -webkit-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
     -moz-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
-    height: 607px;
+    height: 700px;
     width: 600px;
     background-color: #cadeeb46;
     border-radius: 50px;
     transition: .3s;
+    z-index: 20000000000000000000;
  }
 
 #form1:hover{
@@ -80,13 +81,13 @@
  }
  #dote{ 
     position: relative;
-    top: -227px;
+    top: -300px;
     left: 60px;
  }
  #hura{
     position: relative;
     left: 340px;
-    top: -150px;
+    top: -223px;
     z-index: 1;
  }
  #asegu{
@@ -126,6 +127,7 @@
 #form1 #botones1{
     position: relative;
     top: -40px;
+    z-index: 200000;
 }
  #form2 #botones{
      position: relative;

@@ -12,6 +12,7 @@
     <html lang="en">
     <head>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/citas.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio - Iniciar Sesión</title>
@@ -33,7 +34,8 @@
                     <h1>La mejor<span></span></h1>
                     <h1>Plataforma de <span></span></h1>
                     <h1>Consultas Online<span></span></h1>
-                    <a href="loginpacientes.php" type="button" class="cta">Iniciar Sesión</a>
+                    <a href="login.php" type="button" class="cta">Iniciar Sesión</a>
+                    <a href="invitado.php" type="button" class="cta">Entrar como Paciente</a>
                     <div id="p">
                     <p><h2 id="p">"Tu necesidad es nuestra prioridad"</h2></p>
                     </div>

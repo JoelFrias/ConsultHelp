@@ -35,7 +35,7 @@
 
                 <p id="aaa" style="color: white;"><?php echo $nosabetu['username']; ?></p>
 
-                <a href="credit.php"><input  id="fff" type="button" value="Creditos"></a>
+                <a href="credit.php"><input  id="fff" type="button" value="Doctores"></a>
 
                 <a href="php/salir.php"><button style="width:110px;">Cerrar Sesión</button></a>
                 
