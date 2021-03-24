@@ -50,7 +50,7 @@
     <div class="container">
             <div class="row">
                 <div id="crea-cita">
-                    <form action="php/recaptcha.php" method="POST" name="" id="form1"><br>
+                    <form action="php/recaptcha.php" method="POST" name="" id="form11"><br>
 
                         <div id="frente" align="center">
                             <img  style="width: 60px; height: 60px;" src="img/icono.png" alt="Icono Consult Help">
@@ -120,17 +120,17 @@
                             <label for="">Detalles</label>
                             <input autocomplete="off"  type="text" name="Detalles" value="" id="Detalles"/><br>
                         </div>
-                        <div id="botones1" align="center">
+                        <div id="botones11" align="center">
                             <div class="g-recaptcha" data-sitekey="6LdZ4owaAAAAALH5lTfyJVlleeLLSTA9k7wAtHQd"></div><br>
                             <input type="reset" value="Borrar" style="width: 70px;">
                             <button type="submit" onclick="" style="width: 70px;">Guardar</button>
                         </div>
-                        <div id="hura">
+                        <div id="huraa">
                             <label>Hora:</label><br>
                             <input autocomplete="off" type="time" name="Hora" value="" id="Hora"/><br><br>
                         </div>
 
-                        <div id="dote">
+                        <div id="dotee">
                             <label>Fecha:</label><br>
                             <input autocomplete="off" type="date" name="Fecha" value="" id="Fecha"/>
                         </div>

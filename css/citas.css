@@ -2,13 +2,24 @@
     box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
     -webkit-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
     -moz-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    height: 607px;
+    width: 600px;
+    background-color: #cadeeb46;
+    border-radius: 50px;
+    transition: .3s;
+    z-index: 20000000000000000000;
+}
+#form11{
+    box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    -webkit-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
+    -moz-box-shadow: -3px 7px 45px 14px rgba(56, 56, 56, 0.36);
     height: 700px;
     width: 600px;
     background-color: #cadeeb46;
     border-radius: 50px;
     transition: .3s;
     z-index: 20000000000000000000;
- }
+}
 
 #form1:hover{
     box-shadow: -3px 7px 45px 14px rgba(0,0,0,0.36);
@@ -79,15 +90,27 @@
     top: -72px;
     left: 60px;
  }
+ 
+ #dotee{ 
+    position: relative;
+    top: -315px;
+    left: 60px;
+ }
+ #huraa{
+    position: relative;
+    left: 340px;
+    top: -238px;
+    z-index: 1;
+ }
  #dote{ 
     position: relative;
-    top: -300px;
+    top: -227px;
     left: 60px;
  }
  #hura{
     position: relative;
     left: 340px;
-    top: -223px;
+    top: -150px;
     z-index: 1;
  }
  #asegu{
@@ -124,6 +147,11 @@
  #rad{
      position: relative;
  }
+#form11 #botones11{
+    position: relative;
+    top: -30px;
+    z-index: 200000;
+}
 #form1 #botones1{
     position: relative;
     top: -40px;
