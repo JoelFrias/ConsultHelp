@@ -323,13 +323,13 @@ textarea{
 /* estilos de la tabla */
 
 table{
-    z-index: 10;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     width: 80%;
     text-align: center;
     border-collapse: collapse;
     font-size: 10px;
+    z-index: 2000000000000000000;
 }
 th, td{
     border: 1px solid black;
