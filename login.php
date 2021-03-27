@@ -54,6 +54,5 @@ require 'php/conexion.php';
 
     <script src="js/java.js"></script>
     <script src="js/app.js"></script>
-    
 </body>
 </html>
