@@ -34,7 +34,7 @@
                 <h1>Plataforma de <span></span></h1>
                 <h1>Consultas Online<span></span></h1>
                 <a href="#citas" type="button" class="cta">Agendar Cita</a>
-                <a href="credit.php" type="button" class="cta">Doctores en servicio</a>
+                <a href="credit.html" type="button" class="cta">Doctores en servicio</a>
                 <div id="p">
                     <p><h2 id="p" >"Tu necesidad es nuestra prioridad"</h2></p>
                 </div>
