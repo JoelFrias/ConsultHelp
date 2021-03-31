@@ -1,9 +1,33 @@
 <?php
-session_start();
-if (isset($_SESSION['username'])) {
-  header('location: index.php');
-}
-require 'php/conexion.php';
+    session_start();
+    if (isset($_SESSION['username'])) {
+    header('location: index.php');
+    }
+    require 'php/conexion.php';
+
+    if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
+    
+        $usuario = $_POST['usuario'];
+        $clave = $_POST['clave'];
+
+        $message = '';
+
+        $un = "SELECT username FROM users WHERE email = '$usuario'";
+
+        $q = "SELECT COUNT(*) as contar from users where email = '$usuario' and password = '$clave' ";
+
+        $consulta = mysqli_query($conexion,$q);
+
+        $array = mysqli_fetch_array($consulta);
+
+        if($array['contar']>0){
+            $_SESSION['username'] = $un; 
+            header ("location: index.php");
+        }else{ 
+            $message = 'El correo electrónico o la contraseña son incorrectos';
+        }
+
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +46,11 @@ require 'php/conexion.php';
 
         <div class="panels-container">
             <div class="signin-signup">
-                <form action="php/loguear.php" method="POST" class="sign-in-form">
+                <form action="login.php" method="POST" class="sign-in-form">
                     <h2 class="title">Iniciar Sesión</h2>
+                    <?php if(!empty($message)): ?>
+                        <p> <?= $message ?></p>
+                    <?php endif; ?>
                      <div class="input-field">
                          <i class="fas fa-user"></i>
                          <input autocomplete="off" type="email" placeholder="Email" name="usuario" id="email">

@@ -27,8 +27,14 @@ if($recaptcha != ''){
     }else{
        echo "Robot de mierda";
     }
-}else{
-    echo "rellene todos los campos";
-    
-}
+}else{ 
 ?>
+
+    <script>
+    
+        alert('rellene todos los campos');
+        window.location="../invitado.php#citas";
+    
+    </script>
+
+<?php } ?>
