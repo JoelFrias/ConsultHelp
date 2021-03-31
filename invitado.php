@@ -42,7 +42,7 @@
             <img id="asd" name="asd"src="img/register.svg" alt="Imagen de doctor">
         </div>
     </section>
-    <!-- dasdasd -->
+    
     <a name="citas"></a>
 
     <br><br><br><br>
