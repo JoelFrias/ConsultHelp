@@ -17,7 +17,7 @@
                 <div class="brand">
                     <a href="invitado.php"><h1><span>C</span>onsult <span>H</span>elp</h1></a>
                 </div>
-                <div class="brand" style="color:white;font-size:17px;position:relative;left:200px;">
+                <div class="brand" style="color:white;font-size:17px;">
                     Sesión iniciada como paciente.
                 </div>
                 <div class="brand">

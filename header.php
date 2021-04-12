@@ -52,7 +52,7 @@
                             <li><a href="consultas.php#cobrar">Cobrar Consulta</a></li>
                         </ul>
                     </li>
-                    <li><a href="credit.html">Doctores</a></li>
+                    <li><a href="credits.php">Doctores</a></li>
                     <li><a href="php/salir.php">Cerrar Sesión</a></li>
                 </ul>
             </div>

@@ -1,3 +1,17 @@
+<?php
+
+    session_start();
+
+    $usuario = $_SESSION['username'];
+
+    if(!isset($usuario)){
+        header('location:index.html');
+    }
+
+    require 'php/conexion.php';
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,30 +20,16 @@
     <link rel="stylesheet" href="css/credits.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/citas.css">
-    <link rel="stylesheet" href="css/footer.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consult Help - Creditos</title>
 </head>
 <body>
 
-    <section id="header">
-            <div class="header container">
-                <div class="nav-bar">
-                    <div class="brand">
-                        <a href="invitado.php"><h1><span>C</span>onsult <span>H</span>elp</h1></a>
-                    </div>
-                    <div class="brand" style="color:white;font-size:17px;position:relative;left:200px;">
-                        Sesión iniciada como paciente.
-                    </div>
-                    <div class="brand">
-                        <a href="php/salir.php"><button style="width:110px;">Cerrar Sesion</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <?php require 'header.php' ?>
 
-    <div align="center" id="desa">
+
+    <div align="center" style="position: relative; top: 170px">
         <label><h1>Doctores</h1></label>
     </div>
     <section class="team">
@@ -72,42 +72,7 @@
         </div>
     </section>
 
-    <footer>
-        <div id="footer">
-            <br><br>
-            <h1>Consult Help</h1>
-            <div id="nosotros">
-                <div id="vision">
-                    <b>Visión</b>
-                    <p>Construir la plataforma online mas efectiva y segura.</p>
-                </div>
-                <div id="mision">
-                    <b>Misión</b>
-                    <p>Proporcionar nuestas herramientas a el alcance de todos.</p>
-                </div>
-            </div>
-            <div id="creditos">
-                <p>Esta pagina fue creada por:</p>
-                <ul>
-                    <li><a href="https://www.instagram.com/joelfrias_/" target="_blank" rel="noopener noreferrer">Franklin Joel</a></li>
-                    <li><a href="http://www.instagram.com/23._.alexander/" target="_blank" rel="noopener noreferrer">Alexander Castro</a></li>
-                    <li><a href="https://www.instagram.com/loraabelt/" target="_blank" rel="noopener noreferrer">Loranny Beltre</a></li>
-                </ul>
-            </div>
-            <div id="contactos">
-                <h1>Contacto</h1>
-                    <p><a href="https://www.google.com/maps/place/Santiago/" target="_BLANK" rel="noonpener noreferrer">Santiago, Rep. Dom.</a></p>
-                    <p>(809) 295-9871</p>
-                    <p>consulthelp@contacto.com</p>   
-            </div>
-            <div id="copyright" align="center">
-                <p>
-                    COPYRIGHT © 2021 - Consult Help <br>
-                    |Todos los Derechos Reservados|
-                </p>
-            </div>
-        </div>
-    </footer>
+    <?php require 'footer.html' ?>
 
 </body>
 </html>

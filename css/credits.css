@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-label{
+.team label{
     position: relative;
     top:  180px;
 }
@@ -18,7 +18,7 @@ label{
     display: flex;
     flex-wrap: wrap;
 }
-img{
+.team img{
     vertical-align: middle;
     max-width: 100%;
 }
