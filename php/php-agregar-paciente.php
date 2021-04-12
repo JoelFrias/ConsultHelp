@@ -13,5 +13,5 @@
 
     sleep(1);
 
-    header('location: ../index1.php#Agregar')
+    header('location: ../index.php#Agregar')
 ?>
