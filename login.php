@@ -26,7 +26,6 @@
         }else{ 
             $message = 'El correo electrónico o la contraseña son incorrectos';
         }
-
     }
 ?>
 <!DOCTYPE html>
