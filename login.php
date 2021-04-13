@@ -75,7 +75,6 @@
                 <img src="img/log.svg" class="image" alt="Doctor - Medicina - Medico">
             </div>
         </div>
-
     </div>
 
     <script src="js/java.js"></script>
