@@ -35,6 +35,11 @@
                 <div id="mostrar-consultas" align="center">
                             <h1>Tabla de citas:</h1>
                             <table id="tabla" name="tabla">
+                                <form action="tabla.php" method="get">
+                                    <label>Filtar por fecha: </label> <input type="date" name="fecha" id="">
+                                    <input type="submit" value="Buscar" style="width: 70px">
+                                    <br><br>
+                                </form>
                                 <thead>
                                     <tr>
                                         <th>Id</th>
@@ -50,9 +55,18 @@
                                 
                                 <?php
 
-                                require 'php/conexion.php';
+                                if (!empty($_GET['fecha'])){
+                                    
+                                    $fecha = $_GET['fecha'];
+                                    $sql = "SELECT * FROM citas WHERE Fecha_citas = '$fecha' ";
 
-                                $sql = "SELECT * FROM citas";
+                                }else{
+
+                                    $sql = "SELECT * FROM citas";
+
+                                }
+
+                                require 'php/conexion.php';
 
                                 $result = mysqli_query($conexion, $sql);
 
@@ -76,6 +90,13 @@
                                 
                             </table>
                         </div>
+
+                        <br><br><br><br>
+
+
+                        <?php require 'footer.html' ?>
+
+                        
 
             </body>
         </html>

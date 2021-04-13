@@ -82,6 +82,11 @@
 
                 <div id="mostrar-consultas" align="center">
                             <h1>Todos los pacientes:</h1>
+                            <form action="pacientes.php#tabla" method="get">
+                                <label>Filtrar por nombre: </label> <input type="text" name="namee" autocomplete="off">
+                                <input type="submit" value="Buscar" style="width: 70px">
+                                <br><br>
+                            </form>
                             <table id="tabla" name="tabla">
                                 <thead>
                                     <tr>
@@ -97,9 +102,18 @@
                                 
                                 <?php
 
-                                    require 'php/conexion.php';
+                                    if (!empty($_GET['namee'])){
+                                                                        
+                                        $namee = $_GET['namee'];
+                                        $sql = "SELECT * FROM pacientes WHERE Nombre = '$namee' ";
 
-                                    $sql = "SELECT * FROM pacientes";
+                                    }else{
+
+                                        $sql = "SELECT * FROM pacientes";
+
+                                    }
+
+                                    require 'php/conexion.php';
 
                                     $result = mysqli_query($conexion, $sql);
 

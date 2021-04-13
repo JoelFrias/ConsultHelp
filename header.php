@@ -47,9 +47,8 @@
                     <li><a href="consultas.php">Consultas</a>
                         <ul>
                             <li><a href="consultas.php#crear">Crear Cita</a></li>
-                            <li><a href="tabla.php#tabla1">Mostrar citas</a></li>
-                            <li><a href="tabla.php#tabla2">Filtrar citas</a></li>
                             <li><a href="consultas.php#cobrar">Cobrar Consulta</a></li>
+                            <li><a href="tabla.php#tabla1">Mostrar citas</a></li>
                         </ul>
                     </li>
                     <li><a href="credits.php">Doctores</a></li>
