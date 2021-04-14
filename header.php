@@ -41,7 +41,7 @@
                     <li><a href="pacientes.php">Pacientes</a>
                         <ul>
                             <li><a href="pacientes.php#Agregar">Agregar paciente</a></li>
-                            <li><a href="pacientes.php#tabla">Ver pacientes</a></li>
+                            <li><a href="paciente.php">Ver pacientes</a></li>
                         </ul>
                     </li>
                     <li><a href="consultas.php">Consultas</a>

@@ -334,7 +334,7 @@ table{
 th, td{
     border: 1px solid black;
     padding: 15px;
-    font-size: 10px small;
+    font-size: 10px;
 }
 thead{
     border-bottom: solid 5px rgb(76, 194, 202);

@@ -28,7 +28,7 @@
 
             <?php require 'header.php' ?>
 
-        <a name="Agregar">
+        <a name="Agregar"><br><br>
 
                 <div class="container">
                     <div class="row">
@@ -79,65 +79,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div id="mostrar-consultas" align="center">
-                            <h1>Todos los pacientes:</h1>
-                            <form action="pacientes.php#tabla" method="get">
-                                <label>Filtrar por nombre: </label> <input type="text" name="namee" autocomplete="off">
-                                <input type="submit" value="Buscar" style="width: 70px">
-                                <br><br>
-                            </form>
-                            <table id="tabla" name="tabla">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Nombre del Paciente</th>
-                                        <th>Telefono</th>
-                                        <th>Email</th>
-                                        <th>Padecimientos</th>                                
-                                        <th>Detalles</th>
-                                        <th>Aseguradora</th>
-                                    </tr>
-                                </thead>
-                                
-                                <?php
-
-                                    if (!empty($_GET['namee'])){
-                                                                        
-                                        $namee = $_GET['namee'];
-                                        $sql = "SELECT * FROM pacientes WHERE Nombre = '$namee' ";
-
-                                    }else{
-
-                                        $sql = "SELECT * FROM pacientes";
-
-                                    }
-
-                                    require 'php/conexion.php';
-
-                                    $result = mysqli_query($conexion, $sql);
-
-                                    while($mostrar=mysqli_fetch_array($result)){
-
-                                ?>
-                                
-                                <tr>
-                                
-                                    <td><?php echo $mostrar['Id'] ?></td>
-                                    <td><?php echo $mostrar['Nombre'] ?></td>
-                                    <td><?php echo $mostrar['Telefono'] ?></td>
-                                    <td><?php echo $mostrar['Email'] ?></td>
-                                    <td><?php echo $mostrar['Padecimientos'] ?></td>
-                                    <td><?php echo $mostrar['Detalles'] ?></td>
-                                    <td><?php echo $mostrar['Aseguradora'] ?></td>
-
-                                </tr>
-
-                                <?php } ?>
-                                
-                            </table>
-                        </div> <br><br>
-
         <?php require 'footer.html' ?>
     </body>
 </html>

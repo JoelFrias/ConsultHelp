@@ -246,7 +246,7 @@
                             </form>
                         </div>
                     </div>
-                </div> <br><br><br>
+                </div> <br><br><br><br><br>
 
                 <?php require 'footer.html' ?>
 
