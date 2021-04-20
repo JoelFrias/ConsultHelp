@@ -1,8 +1,13 @@
 function calculo(){
 
+    var checkbox1 = document.getElementById('checkbox1');
+    var checkbox2 = document.getElementById('checkbox2');
+    var checkbox3 = document.getElementById('checkbox3');
+    var checkbox4 = document.getElementById('checkbox4');
+
     var nul;
 
-    if(document.getElementById('checkbox1').checked==true){ 
+    if(checkbox1.checked==true){ 
         var Electro=" Electrocardiograma -";
         var llave=parseInt(900);
         document.getElementById('checkbox1').value=Electro;
@@ -11,7 +16,7 @@ function calculo(){
         document.getElementById('checkbox1').value=nul;
     }
 
-    if(document.getElementById('checkbox2').checked==true){ 
+    if(checkbox2.checked==true){ 
         var Endos=" Endoscopia -";
         var puerta=parseInt(45000);
         document.getElementById('checkbox2').value=Endos;
@@ -20,7 +25,7 @@ function calculo(){
         document.getElementById('checkbox2').value=nul;
     }
 
-    if(document.getElementById('checkbox3').checked==true){ 
+    if(checkbox3.checked==true){ 
         var chequeo=" Chequeo Extra -";
         var ventana=parseInt(4500);
         document.getElementById('checkbox3').value=chequeo;
@@ -29,7 +34,7 @@ function calculo(){
         document.getElementById('checkbox3').value=nul;
     }
 
-    if(document.getElementById('checkbox4').checked==true){ 
+    if(checkbox4.checked==true){ 
         var terapia=" Terapia";
         var hierro = parseInt(1500);
         document.getElementById('checkbox4').value=terapia;

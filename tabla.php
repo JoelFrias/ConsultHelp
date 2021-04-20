@@ -66,8 +66,6 @@
 
                                 }
 
-                                require 'php/conexion.php';
-
                                 $result = mysqli_query($conexion, $sql);
 
                                 while($mostrar=mysqli_fetch_array($result)){

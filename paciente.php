@@ -23,20 +23,18 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Consult Help</title>
                 <link rel="shortcut icon" href="img/logo/icono.ico" type="image/x-icon">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+                <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
             </head>
             <body>
 
             <?php require 'header.php' ?><br><br><br><br><br><br>
             <div id="mostrar-consultas" align="center">
                             <h1>Todos los pacientes:</h1>
-                            <form action="paciente.php" method="get">
-                                <label>Filtrar por nombre: </label> <input type="text" name="namee" autocomplete="off">
-                                <input type="submit" value="Buscar" style="width: 70px">
-                                <br><br>
+                           
                             </form>
                             <table id="tabla" name="tabla">
                                 <thead>
-                                    <tr>
                                         <th>Id</th>
                                         <th>Nombre del Paciente</th>
                                         <th>Telefono</th>
@@ -44,7 +42,6 @@
                                         <th>Padecimientos</th>                                
                                         <th>Detalles</th>
                                         <th>Aseguradora</th>
-                                    </tr>
                                 </thead>
                                 
                                 <?php
@@ -52,7 +49,7 @@
                                     if (!empty($_GET['namee'])){
                                                                         
                                         $namee = $_GET['namee'];
-                                        $sql = "SELECT * FROM pacientes WHERE Nombre = '$namee' ";
+                                        $sql = "SELECT * FROM pacientes WHERE Nombre  ";
 
                                     }else{
 
@@ -83,8 +80,25 @@
                                 <?php } ?>
                                 
                             </table>
+
+
                         </div> <br><br>
 
+                        <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
+                        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script> 
+                        <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script> 
+
+                        <script>
+                        
+                        $(document).ready(function() {
+                            $('#tabla').DataTable();
+                        } );
+                        
+                        </script>
+                            
         <?php require 'footer.html' ?>
+
+        
+
     </body>
 </html>
