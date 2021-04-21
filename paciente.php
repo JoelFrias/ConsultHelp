@@ -16,24 +16,19 @@
         <html lang="es">
             <head>
                 <link rel="stylesheet" href="css/style.css">
-                <link rel="stylesheet" href="css/citas.css">
                 <link rel="stylesheet" href="css/menu.css">
                 <script src="js/java.js"></script>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Consult Help</title>
                 <link rel="shortcut icon" href="img/logo/icono.ico" type="image/x-icon">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-                <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
             </head>
             <body>
 
             <?php require 'header.php' ?><br><br><br><br><br><br>
             <div id="mostrar-consultas" align="center">
                             <h1>Todos los pacientes:</h1>
-                           
-                            </form>
-                            <table id="tabla" name="tabla">
+                            <table id="tabla" name="tabla" class="table table-striped table-bordered">
                                 <thead>
                                         <th>Id</th>
                                         <th>Nombre del Paciente</th>
