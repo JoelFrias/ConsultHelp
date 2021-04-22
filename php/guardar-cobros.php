@@ -16,6 +16,6 @@
 
     sleep(1);
 
-    header('location: ../index.php#cobrar');
+    header('location: ../cobrar.php');
 
 ?>

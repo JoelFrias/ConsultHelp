@@ -13,5 +13,5 @@
 
     sleep(1);
 
-    header('location: ../index.php#Agregar')
+    header('location: ../pacientes.php')
 ?>

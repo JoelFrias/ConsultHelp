@@ -14,6 +14,6 @@
 
     sleep(1);
 
-    header('location: ../index.php#citas');
+    header('location: ../consultas.php');
 
 ?>
