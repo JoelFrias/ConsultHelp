@@ -115,17 +115,9 @@
                                 
                                 <?php
 
-                                    if (!empty($_GET['namee'])){
-                                                                        
-                                        $namee = $_GET['namee'];
-                                        $sql = "SELECT * FROM pacientes WHERE Nombre  ";
 
-                                    }else{
-
-                                        $sql = "SELECT * FROM pacientes";
-
-                                    }
-
+                                    $sql = "SELECT * FROM pacientes";
+                                    
                                     require 'php/conexion.php';
 
                                     $result = mysqli_query($conexion, $sql);

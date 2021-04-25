@@ -24,54 +24,8 @@
                 <script src="js/java.js"></script>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Consult Help</title>
                 <link rel="shortcut icon" href="img/logo/icono.ico" type="image/x-icon">
-                <style>
-                    .dataTables_filter input{
-                        background-color: #fff;
-                        border: 2px solid rgb(55, 122, 223);
-                        margin: 20px;
-                        border-radius: 8px;
-                        height: 25px;
-                        outline: none;
-                    }
-
-                    .dataTables_filter label{
-                        position: relative;
-                        left: 435px;
-                        top: 10px;
-                    }
-
-                    .dataTables_length select{
-                        width: auto;
-                        display: inline-block;
-                    }
-                    .dataTables_length label{
-                        position: relative;
-                        top: 56px;
-                        right: 470px;
-                    }
-                    .dataTables_info{
-                        position: relative;
-                        right: 490px;
-                    }
-                  
-                    .paginate_button{
-                        display: inline-block;
-                        word-spacing: 0.20rem;
-                    }
-                   .pagination{
-                       position: relative;
-                       left: 510px;
-                       border: 1px solid black;
-                       border-radius: 3px;
-                       width: 100px;
-                       height: 15px;
-                   }
-                   .pagination ul li a{
-                       margin: auto;
-                   }
-                </style>
+                <title>Consult Help</title>
             </head>
             <body>
 
