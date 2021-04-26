@@ -1,0 +1,83 @@
+.dataTables_filter input{
+    background-color: #fff;
+    border: 2px solid rgb(55, 122, 223);
+    margin: 20px;
+    border-radius: 8px;
+    height: 25px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dataTables_filter label{
+    position: relative;
+    left: 31%;
+    top: 10px;
+}
+
+.dataTables_length select{
+    width: auto;
+    display: inline-block;
+}
+
+.dataTables_length label{
+    position: relative;
+    top: 56px;
+    right: 33%;
+}
+
+.dataTables_info{
+    position: relative;
+    right: 34%;
+    top: 10px;
+}
+         
+.paginate_button{
+    display: inline-block;
+    word-spacing: 0.20rem;
+}
+
+.pagination{
+    position: relative;
+    left: 34%;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+}
+       
+.pagination li a{
+    color: black;
+    font-size: 11px
+}
+
+.pagination li{
+    margin: 3px;
+    padding: 2.5px;
+}
+
+.active{
+    background-color: rgb(55, 122, 223);
+    border-radius: 5px;
+    width: 15px
+}
+
+li.paginate_button.page-item{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+li.paginate_button.page-item.previous{
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+}
+
+li.paginate_button.page-item.next{
+   border-left: 0px solid black;
+   border-right: 0px solid black;
+}
+
+#mostrar-consultas h1{
+    position: relative;
+    top: 50px;
+}
