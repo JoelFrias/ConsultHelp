@@ -49,7 +49,7 @@
 
 		                                <select id="selectpaciente">
 
-                                            <option value="--">Selecciona un paciente</option>
+                                            <option value="--">Seleccionar</option>
 
                                             <?php
 

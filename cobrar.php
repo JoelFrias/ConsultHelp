@@ -18,6 +18,9 @@
                 <link rel="stylesheet" href="css/style.css">
                 <link rel="stylesheet" href="css/citas.css">
                 <link rel="stylesheet" href="css/menu.css">
+                <link rel="stylesheet" href="css/select2.css">
+                <script src="js/jquery-3.1.1.min.js"></script>
+                <script src="js/select2.js"></script>
                 <script src="js/java.js"></script>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +48,7 @@
 
                                     <select id="selectname">                
 
-                                        <option value="--">Selecciona un paciente</option>
+                                        <option value="--">Seleccionar</option>
 
                                         <?php
 
@@ -160,3 +163,11 @@
 
         </body>
     </html>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('#selectname').select2();
+    });
+
+</script>
