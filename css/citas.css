@@ -319,32 +319,3 @@ textarea{
     position: relative;
     top: -90px;
 }
-
-/* estilos de la tabla */
-
-table{
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    width: 80%;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 10px;
-    z-index: 2000000000000000000;
-}
-th, td{
-    border: 1px solid black;
-    padding: 15px;
-    font-size: 10px;
-}
-thead{
-    border-bottom: solid 5px rgb(76, 194, 202);
-    background-color: rgb(110, 109, 109);
-    color: white;
-}
-tr:nth-child(even){
-    background-color: rgb(233, 230, 230);
-}
-tr:hover td{
-    background-color: rgb(191, 237, 255);
-    color: black;
-}
