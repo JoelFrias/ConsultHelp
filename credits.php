@@ -23,7 +23,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Consult Help - Creditos</title>
     </head>
-    <body>
+    <body style="background: white;">
 
         <?php require 'header.php' ?>
 

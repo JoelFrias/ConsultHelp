@@ -22,9 +22,11 @@
     vertical-align: middle;
     max-width: 100%;
 }
+body{
+    background-color: white;
+}
 .team{
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
     line-height: 1.5;
     padding: 80px 0;
 }

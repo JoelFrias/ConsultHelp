@@ -52,8 +52,6 @@
 
                                         <?php
 
-                                            include 'php/conexion.php';
-
                                             $execute1 = mysqli_query($conexion,"SELECT * FROM citas");
                                                 
                                             while ($resultados1=mysqli_fetch_array($execute1)){
