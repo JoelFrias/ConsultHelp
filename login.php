@@ -31,6 +31,8 @@
 
             $message = 'El correo electrónico o la contraseña son incorrectos';
 
+            $email = $_POST['usuario'];
+
         }
     }
 ?>
@@ -64,7 +66,7 @@
 
                             <div class="input-field">
                                 <i class="fas fa-user"></i>
-                                <input autocomplete="off" type="email" placeholder="Email" name="usuario" id="email">
+                                <input autocomplete="off" value="<?php if (isset($email)){echo "$email";}?>" type="email" placeholder="Email" name="usuario" id="email">
                             </div>
 
                             <div class="input-field">
