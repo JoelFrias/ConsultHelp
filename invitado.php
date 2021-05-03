@@ -7,6 +7,9 @@
         <link rel="shortcut icon" href="img/logo/icono.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/citas.css">
+        <link rel="stylesheet" href="css/select2.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/select2.js"></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <title>Invitado - Consult Help</title>
     </head>
@@ -83,29 +86,10 @@
 
                                     ?>
 
-                                    <option id='option-<?php echo $resultados["Id"]?>' value="<?php echo $resultados['Id']?>" data-pacientes="<?php echo htmlspecialchars(json_encode($resultados), ENT_QUOTES, 'UTF-8')?>"><?php echo $resultados['Nombre']?></option>
+                                    <option id='option-<?php echo $resultados["Id"]?>' value="<?php echo htmlspecialchars(json_encode($resultados), ENT_QUOTES, 'UTF-8')?>"><?php echo $resultados['Nombre']?></option>
 
                                     <?php } ?>
 
-                                    <script>  
-
-                                        const selectPaciente = document.getElementById('selectpaciente');
-
-                                        selectPaciente.addEventListener('change', function (e) {
-
-                                            var option = document.getElementById('option-' + e.target.value)
-                                            var data = JSON.parse(option.dataset.pacientes)
-
-                                            Object.keys(data).forEach(function(key) {
-
-                                                var elemento = document.getElementById(key);
-
-                                                if (elemento) {
-                                                    elemento.value = data[key]
-                                                }
-                                            })
-                                        })
-                                    </script>
                                 </select>
                             </label>
                         </div>
@@ -165,4 +149,22 @@
         <?php require 'footer.html' ?>
 
     </body>
+    <script>
+
+            $(document).ready(function(){
+
+                $('#selectpaciente').select2();
+                $('#selectpaciente').on('select2:select',function(e){
+                    
+                    const data = JSON.parse(e.params.data.id);
+                    Object.keys(data).forEach(function(key) {
+                        var elemento = document.getElementById(key);
+                        if (elemento) {
+                            elemento.value = data[key];
+                        }
+                    })
+                })
+            })
+                
+    </script>
 </html>

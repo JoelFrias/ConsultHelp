@@ -108,8 +108,3 @@ li.paginate_button.page-item.next{
    border-left: 0px solid black;
    border-right: 0px solid black;
 }
-
-#mostrar-consultas h1{
-    position: relative;
-    top: 50px;
-}

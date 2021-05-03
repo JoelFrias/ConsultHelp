@@ -32,7 +32,7 @@
         
         <div id="mostrar-consultas" align="center">
 
-            <h1>Todos los pacientes:</h1>
+            <h1 style="position: relative; top: 50px;">Todos los pacientes:</h1>
 
             <table id="tabla" name="tabla" class="table table-striped table-bordered">
 

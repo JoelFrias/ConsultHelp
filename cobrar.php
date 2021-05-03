@@ -60,24 +60,10 @@
                                             
                                         ?>
                                                 
-                                            <option id='options-<?php echo $resultados1["Id"]?>' value="<?php echo $resultados1['Id']?>" data-citas="<?php echo htmlspecialchars(json_encode($resultados1), ENT_QUOTES, 'UTF-8')?>"><?php echo $resultados1['Nombre del paciente']?></option>
+                                            <option id='options-<?php echo $resultados1["Id"]?>' value="<?php echo htmlspecialchars(json_encode($resultados1), ENT_QUOTES, 'UTF-8')?>"><?php echo $resultados1['Nombre del paciente']?></option>
 
                                         <?php } ?>
 
-                                        <script>  
-                                            const selectPacient = document.getElementById('selectname');
-                                            selectPacient.addEventListener('change', function (s) {
-                                                var options = document.getElementById('options-' + s.target.value)
-                                                var datas = JSON.parse(options.dataset.citas)
-                                                Object.keys(datas).forEach(function(key) {
-                                                    var elemento = document.getElementById(key);
-                                                    if (elemento) {
-                                                    elemento.value = datas[key]
-                                                    }
-                                                })
-                                            })
-                                        </script>
-                                                
                                     </select>   
                                 </label>
                             </div><br>
@@ -164,10 +150,21 @@
         </body>
     </html>
 
-<script type="text/javascript">
+    <script>
 
     $(document).ready(function(){
-        $('#selectname').select2();
-    });
 
+        $('#selectname').select2();
+        $('#selectname').on('select2:select',function(e){
+            
+            const data = JSON.parse(e.params.data.id);
+            Object.keys(data).forEach(function(key) {
+                var elemento = document.getElementById(key);
+                if (elemento) {
+                    elemento.value = data[key];
+                }
+            })
+        })
+    })
+    
 </script>

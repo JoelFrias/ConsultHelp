@@ -62,23 +62,9 @@
 
                                             ?>
 
-                                            <option id='option-<?php echo $resultados["Id"]?>' value="<?php echo $resultados['Id']?>" data-pacientes="<?php echo htmlspecialchars(json_encode($resultados), ENT_QUOTES, 'UTF-8')?>"><?php echo $resultados['Nombre']?></option>
+                                            <option id='option-<?php echo $resultados["Id"]?>' value="<?php echo htmlspecialchars(json_encode($resultados), ENT_QUOTES, 'UTF-8')?>"><?php echo $resultados['Nombre']?></option>
 
                                             <?php } ?>
-
-                                            <script>  
-                                                const selectPaciente = document.getElementById('selectpaciente');
-                                                selectPaciente.addEventListener('change', function (e) {
-                                                    var option = document.getElementById('option-' + e.target.value)
-                                                    var data = JSON.parse(option.dataset.pacientes)
-                                                    Object.keys(data).forEach(function(key) {
-                                                        var elemento = document.getElementById(key);
-                                                        if (elemento) {
-                                                        elemento.value = data[key]
-                                                        }
-                                                    })
-                                                })
-                                            </script>
                                         </select>
                                     </label>
                                 </div><br><br>
@@ -126,12 +112,22 @@
                 <?php require 'footer.html' ?>
 
             </body>
-        </html>
+            <script>
 
-<script type="text/javascript">
+            $(document).ready(function(){
 
-    $(document).ready(function(){
-        $('#selectpaciente').select2();
-    });
-
-</script>
+                $('#selectpaciente').select2();
+                $('#selectpaciente').on('select2:select',function(e){
+                    
+                    const data = JSON.parse(e.params.data.id);
+                    Object.keys(data).forEach(function(key) {
+                        var elemento = document.getElementById(key);
+                        if (elemento) {
+                            elemento.value = data[key];
+                        }
+                    })
+                })
+            })
+                
+        </script>
+</html>
