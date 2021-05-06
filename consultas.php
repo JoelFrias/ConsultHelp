@@ -65,6 +65,7 @@
                                             <option id='option-<?php echo $resultados["Id"]?>' value="<?php echo htmlspecialchars(json_encode($resultados), ENT_QUOTES, 'UTF-8')?>"><?php echo $resultados['Nombre']?></option>
 
                                             <?php } ?>
+                                            
                                         </select>
                                     </label>
                                 </div><br><br>
@@ -109,10 +110,12 @@
                         </div>
                     </div>
                 </div>
+                <br><br><br><br>
                 <?php require 'footer.html' ?>
 
             </body>
-            <script>
+
+        <script>
 
             $(document).ready(function(){
 
@@ -128,6 +131,6 @@
                     })
                 })
             })
-                
+
         </script>
 </html>
