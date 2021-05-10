@@ -63,7 +63,7 @@
                                 
                 <?php
 
-                    if (!empty($_GET['fecha'])){
+                    if (!empty($_GET['fecha'])) {
                                     
                         $fecha = $_GET['fecha'];
                         $sql = "SELECT * FROM citas WHERE Fecha_citas = '$fecha' ";
