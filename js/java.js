@@ -62,6 +62,7 @@ function calculo(){
 }
 
 function pagar() {
+    
     var total=document.getElementById('Total').value;
 
     var pagado=document.getElementById('Pagado').value;
@@ -84,4 +85,5 @@ function pagar() {
     else{
         alert ('Pago realizado');
     }
+    
 }

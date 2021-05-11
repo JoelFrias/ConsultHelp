@@ -14,7 +14,7 @@ function mostrarContraseña(){
 
     }else{
 
-      input.type = "password";
+        input.type = "password";
         boton.src = "img/mostrar.png";
 
     }

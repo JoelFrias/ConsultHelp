@@ -25,7 +25,7 @@ if($recaptcha != ''){
         header('location: ../invitado.php#citas');
         
     }else{
-       echo "Robot de mierda";
+       echo "Robot de mierda :)";
     }
 }else{
 ?>
