@@ -34,8 +34,8 @@
                     <h1>Plataforma de <span></span></h1>
                     <h1>Consultas Online<span></span></h1>
                     <a href="pacientes.php" type="button" class="cta">Añadir Paciente</a><br>
+                    <a href="tabla.php" type="button" class="cta">Ver Citas</a>
                     <a href="consultas.php" type="button" class="cta">Crear Nueva Consulta</a><br>
-                    <a href="tabla.php" type="button" class="cta">Ver Consultas</a>
 
                     <p><h2 id="p">"Tu necesidad es nuestra prioridad"</h2></p>
 
