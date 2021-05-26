@@ -203,6 +203,7 @@ input[type="text"], input[type="number"], input[type="date"], input[type="time"]
     border-radius: 8px;
     border: 2px solid rgb(55, 122, 223);
     outline: none;
+    background: none;
 }
  input[type="checkbox"]{
      display: inline-block;
@@ -309,6 +310,7 @@ textarea{
     border-radius: 8px;
     border: 2px solid rgb(55, 122, 223);
     outline: none;
+    background: none;
 }
 #div-aseguradora-paciente{
     position: relative;
