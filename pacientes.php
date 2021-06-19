@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/citas.css">
         <link rel="stylesheet" href="css/menu.css">
-        <script src="js/java.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Consult Help</title>
@@ -80,6 +79,8 @@
         </div>
 
         <?php require 'footer.html' ?>
+
+        <script src="js/java.js"></script>
     
     </body>
 </html>

@@ -2,9 +2,7 @@
 
     session_start();
 
-    $usuario = $_SESSION['username'];
-
-    if(isset($usuario)){
+    if (isset($_SESSION['username'])) {
 
     require 'php/conexion.php';
 
@@ -15,7 +13,6 @@
     <head>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/citas.css">
-        <script src="js/java.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Consult Help</title>
@@ -47,6 +44,8 @@
         </section>
 
         <?php require 'footer.html' ?>
+
+        <script src="js/java.js"></script>
                 
     </body>
 </html>

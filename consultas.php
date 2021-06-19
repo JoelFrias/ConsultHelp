@@ -19,9 +19,6 @@
                 <link rel="stylesheet" href="css/citas.css">
                 <link rel="stylesheet" href="css/menu.css">
                 <link rel="stylesheet" href="css/select2.css">
-                <script src="js/jquery-3.1.1.min.js"></script>
-                <script src="js/select2.js"></script>
-                <script src="js/java.js"></script>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="shortcut icon" href="img/logo/icono.ico" type="image/x-icon">
@@ -133,4 +130,8 @@
             })
 
         </script>
+        
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/select2.js"></script>
+        <script src="js/java.js"></script>
 </html>

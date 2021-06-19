@@ -8,9 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/citas.css">
         <link rel="stylesheet" href="css/select2.css">
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/select2.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <link href="https://chatcompose.azureedge.net/static/all/global/export/css/main.5b1bd1fd.css" rel="stylesheet">
         <title>Invitado - Consult Help</title>
     </head>
     <body>
@@ -167,4 +165,9 @@
             })
                 
     </script>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async type="text/javascript" src="https://chatcompose.azureedge.net/static/all/global/export/js/main.a7059cb5.js?user=JAL2310&lang=ES" user="JAL2310" lang="ES"></script>
 </html>
