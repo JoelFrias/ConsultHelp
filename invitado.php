@@ -147,6 +147,10 @@
         <?php require 'footer.html' ?>
 
     </body>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async type="text/javascript" src="https://chatcompose.azureedge.net/static/all/global/export/js/main.a7059cb5.js?user=JAL2310&lang=ES" user="JAL2310" lang="ES"></script>
     <script>
 
             $(document).ready(function(){
@@ -166,8 +170,4 @@
                 
     </script>
 
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/select2.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script async type="text/javascript" src="https://chatcompose.azureedge.net/static/all/global/export/js/main.a7059cb5.js?user=JAL2310&lang=ES" user="JAL2310" lang="ES"></script>
 </html>

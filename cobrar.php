@@ -10,7 +10,6 @@
 
     require 'php/conexion.php';
 
-
 ?>
         <!DOCTYPE html>
         <html lang="es">
@@ -31,7 +30,7 @@
                 <div class="container">
                     <div class="row">
                         <div id="cobrar-citas">
-                            <form action="php/guardar-cobros.php" method="POST" name="" id="form2"><br>
+                            <form action="" method="POST" name="" id="form2"><br>
                             
                             <div id="frente" align="center">
                                 <img  style="width: 60px; height: 60px;" src="img/icono.png" alt="Icono Consult Help">
@@ -39,7 +38,7 @@
                                     <h1>Cobrar Consulta</h1><br><br>
                                 </div>
                                 <div align="center">
-                            
+
                                     <div id="nombr-pagar">
                                 <label for="">Buscar Nombre:
                                     
@@ -142,6 +141,11 @@
                 
             <?php require 'footer.html' ?>
 
+            
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script src="js/select2.js"></script>
+            <script src="js/java.js"></script>
+
             <script>
         
                 $(document).ready(function(){
@@ -160,10 +164,6 @@
             })
     
         </script>
-
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/select2.js"></script>
-        <script src="js/java.js"></script>
 
     </body>
 </html>

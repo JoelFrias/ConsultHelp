@@ -111,6 +111,10 @@
                 <?php require 'footer.html' ?>
 
             </body>
+            
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/select2.js"></script>
+        <script src="js/java.js"></script>
 
         <script>
 
@@ -130,8 +134,4 @@
             })
 
         </script>
-        
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/select2.js"></script>
-        <script src="js/java.js"></script>
 </html>

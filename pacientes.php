@@ -10,6 +10,25 @@
 
     require 'php/conexion.php';
 
+    if (!empty($_POST['nombre-paciente']) && !empty($_POST['telefono-paciente']) && !empty($_POST['email-paciente'])) {
+
+        $nombre = $_POST['nombre-paciente'];
+        $telefono = $_POST['telefono-paciente'];
+        $email = $_POST['email-paciente'];
+        $padecimientos = $_POST['padecimientos-paciente'];
+        $detalles = $_POST['detalles-paciente'];
+        $aseguradora = $_POST['aseguradora-paciente'];
+    
+        mysqli_query($conexion,"INSERT INTO pacientes VALUE ('','$nombre','$telefono','$email','$padecimientos','$detalles','$aseguradora')");
+
+        $message = "Paciente agregado correctamente";
+
+    }else{
+        
+        $message = "Favor de llenar todos los campos";
+
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -31,12 +50,20 @@
         <div class="container">
             <div class="row">
                 <div id="añadir-paciente">
-                    <form action="php/php-agregar-paciente.php" method="post"><br><br>
+                    <form action="" method="post"><br><br>
                         <div align="center">
                             <img  style="width: 60px; height: 60px;" src="img/icono.png" alt="Icono Consult Help">
                         </div>
 
                         <h1>Agregar Nuevo Paciente</h1>
+
+                        <?php if(!empty($message)): ?>
+
+                            <div align="center">
+                                <p> <?= $message ?></p>
+                            </div>
+
+                        <?php endif; ?>
 
                         <div id="div-nombre-paciente">
                             <label for="">Nombre del paciente:</label>
